@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --bg_work: hsl(15, 100%, 70%);
+    --bg_play: hsl(195, 74%, 62%);
+    --bg_study: hsl(348, 100%, 68%);
+    --bg_exercise: hsl(145, 58%, 55%);
+    --bg_social: hsl(264, 64%, 52%);
+    --bg_self_care: hsl(43, 84%, 65%);
+    --Very_dark_blue: hsl(226, 43%, 10%);
+    --Dark_blue: hsl(235, 46%, 20%);
+    --Desaturated_blue: hsl(235, 45%, 61%);
+    --Pale_Blue: hsl(236, 100%, 87%);
+    --Fn-size: 18px;
+}
+
+body {
+    background-color: var(--Very_dark_blue);
+    font-family: "Rubik", sans-serif;
+    height: 100vh;
+}
+
+/*!--------------*/
+.img {
+    width: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.content {
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.sub_text,
+.title {
+    width: 100%;
+    color: #fff;
+    margin: .5rem 0;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Desaturated_blue);
+    font-size: var(--Fn-size);
+}
+
+.active {
+    color: #fff;
+}
+
+.card__title {
+    color: #fff;
+    font-size: var(--Fn-size);
+}
+
+.card__ellipsis {
+    width: 100%;
+    cursor: pointer;
+}
+
+.hours {
+    color: #fff;
+    font-weight: 300;
+}
+
+.week {
+    color: var(--Pale_Blue);
+}
+
+/*!--------------*/
+
+.container {
+    width: 90%;
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+
+
+.col-1 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--Dark_blue);
+    border-radius: 25px;
+}
+
+.top {
+    padding: 3rem 1rem;
+    border-radius: 25px;
+    background-color: var(--Blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom {
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.col-2 {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.cards+.cards {
+    margin-top: 2rem;
+}
+
+.card_1,
+.card_2,
+.card_3,
+.card_4,
+.card_5,
+.card_6 {
+    border-radius: 25px;
+    padding: 3rem 0 0;
+}
+
+.card_1 {
+    background: url('./images/icon-work.svg'), var(--bg_work);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+    background-size: 85px;
+}
+
+.card_2 {
+    background: url('./images/icon-play.svg'), var(--bg_play);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+    background-size: 85px;
+}
+
+.card_3 {
+    background: url('./images/icon-study.svg'), var(--bg_study);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+    background-size: 85px;
+}
+
+.card_4 {
+    background: url('./images/icon-exercise.svg'), var(--bg_exercise);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+    background-size: 85px;
+}
+
+.card_5 {
+    background: url('./images/icon-social.svg'), var(--bg_social);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+    background-size: 85px;
+}
+
+.card_6 {
+    background: url('./images/icon-self-care.svg'), var(--bg_self_care);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+    background-size: 85px;
+}
+
+.card__content {
+    padding: 2rem;
+    background-color: var(--Dark_blue);
+    border-radius: 20px;
+}
+
+.type-action,
+.card__hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__hours {
+    margin: 1rem 0;
+}
+
+@media(min-width:800px) {
+
+    /*!--------------*/
+    .img {
+        width: 80px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+    .content {
+        margin:1rem 0;
+        width: 50%;
+    }
+    .sub_text{
+        font-size: .9rem;
+        color: var(--Pale_Blue);
+    }
+    .title {
+        width: 100%;
+        color: #fff;
+        margin: .5rem 0;
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+    a {
+        text-decoration: none;
+        color: var(--Desaturated_blue);
+        font-size: var(--Fn-size);
+    }
+    .active {
+        color: #fff;
+    }
+    .card__title {
+        color: #fff;
+        font-size: .9rem;
+    }
+    .card__ellipsis {
+        width: 100%;
+        cursor: pointer;
+    }
+    .hours {
+        color: #fff;
+        font-weight: 300;
+    }
+    .week {
+        color: var(--Pale_Blue);
+        font-size: .7rem;
+    }
+    /*!--------------*/
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        padding: 5rem 0;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col-1 {
+        width: 25%;
+        margin: 0 .5rem;
+        background-color: var(--Dark_blue);
+        border-radius: 25px;
+    }
+
+    .top {
+        padding: 1.5rem;
+        border-radius: 25px;
+        background-color: var(--Blue);
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: space-evenly;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-between;
+    }
+    .top__links + .top__links{
+        margin-top: 1rem;
+    }
+
+
+
+    .col-2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0rem auto;
+    }
+    .cards,.col-1{
+        margin-bottom:1rem;
+    }
+    .cards+.cards {
+        margin-top: 0rem;
+    }
+    .cards{
+        margin-left: .5rem;
+    }
+    .card_1,
+    .card_2,
+    .card_3,
+    .card_4,
+    .card_5,
+    .card_6 {
+        
+        width: 225px;
+        border-radius: 25px;
+        padding: 2rem 0 0;
+    }
+
+    .card__content {
+        padding: 2.4rem;
+        background-color: var(--Dark_blue);
+        border-radius: 20px;
+    }
+
+    .type-action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__hours {
+        flex-direction: column;
+        align-items: unset;
+        margin: 1rem 0;
+    }
+
+}
