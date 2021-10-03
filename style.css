@@ -245,7 +245,7 @@ a {
 
     .row {
         display: flex;
-    }
+    } 
 
     .col-1 {
         width: 25%;
@@ -269,7 +269,7 @@ a {
         padding: 2rem;
         justify-content: space-between;
     }
-    .top__links + .top__links{
+    .daily,.weekly,.monthly{
         margin-top: 1rem;
     }
 
@@ -283,7 +283,7 @@ a {
         margin: 0rem auto;
     }
     .cards,.col-1{
-        margin-bottom:1rem;
+        margin-bottom:3rem;
     }
     .cards+.cards {
         margin-top: 0rem;
